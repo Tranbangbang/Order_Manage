@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Queries>
+
+	<insert>
+		<insert-via-code>
+			INSERT INTO ViaCode (viaCode, email, createAt)
+			VALUES (@ViaCode, @Email, @CreateAt)
+		</insert-via-code>
+	</insert>
+
+	<select>
+		<get-acc-by-Email>
+			SELECT *
+			FROM aspnetusers
+			WHERE Email = @Email
+		</get-acc-by-Email>
+
+		<get-viaCode-by-Email>
+			SELECT viaCode
+			FROM ViaCode
+			WHERE Email = @Email
+		</get-viaCode-by-Email>
+	</select>
+
+	<update>
+		
+	</update>
+	
+	<delete>
+		
+	</delete>
+
+
+</Queries>
