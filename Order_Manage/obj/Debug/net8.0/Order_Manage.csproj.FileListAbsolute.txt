@@ -129,3 +129,4 @@ C:\CY_VietNam\C#\Order_Manage\Order_Manage\bin\Debug\net8.0\runtimes\win\lib\net
 C:\CY_VietNam\C#\Order_Manage\Order_Manage\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\CY_VietNam\C#\Order_Manage\Order_Manage\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll
 C:\CY_VietNam\C#\Order_Manage\Order_Manage\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\CY_VietNam\C#\Order_Manage\Order_Manage\obj\Debug\net8.0\Order_Manage.sourcelink.json

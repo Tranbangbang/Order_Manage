@@ -7,16 +7,18 @@ using Order_Manage.Dto.Response;
 using Order_Manage.Models;
 using Order_Manage.Repository;
 using Order_Manage.Dto.Helper;
+using Order_Manage.Dto.Mapper;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace Order_Manage.Service.Impl
 {
-    public class LoginService : ILoginService
+    public class AuthService : IAuthService
     {
-        private readonly ILoginRepository _loginRepository;
+        private readonly IAuthRepository _loginRepository;
         private readonly IConfiguration _configuration;
         private readonly IAccountRepository _accountRepository;
 
-        public LoginService(ILoginRepository accountRepository, IConfiguration configuration, IAccountRepository repository)
+        public AuthService(IAuthRepository accountRepository, IConfiguration configuration, IAccountRepository repository)
         {
             _loginRepository = accountRepository;
             _configuration = configuration;
@@ -42,7 +44,8 @@ namespace Order_Manage.Service.Impl
                     UserName = request.Email,
                     Email = request.Email,
                     AccountName = request.AccountName,
-                    Major = request.Major
+                    Major = request.Major,
+                    createAt = DateTime.Now
                 };
                 var created = await _loginRepository.CreateAsync(account, request.Password);
                 if (!created)
@@ -93,10 +96,8 @@ namespace Order_Manage.Service.Impl
                 };
 
                 claims.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));
-
                 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
                 var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
                 var token = new JwtSecurityToken(
                     _configuration["Jwt:Issuer"],
                     _configuration["Jwt:Audience"],
@@ -135,7 +136,8 @@ namespace Order_Manage.Service.Impl
                 {
                     UserName = request.Email,
                     Email = request.Email,
-                    AccountName = request.AccountName
+                    AccountName = request.AccountName,
+                    createAt = DateTime.Now
                 };
                 var created = await _loginRepository.CreateAsync(account, request.Password);
                 if (!created)
@@ -158,5 +160,75 @@ namespace Order_Manage.Service.Impl
                 return ApiResponse<string?>.Error(500, $"An error occurred: {ex.Message}");
             }
         }
+
+        public async Task<ApiResponse<string>> Delete(string id)
+        {
+            try
+            {
+                var account = await _loginRepository.FindByIdAsync(id);
+                if (account == null)
+                {
+                    return ApiResponse<string>.Error(404, "User not found");
+                }
+
+                var deleted = await _loginRepository.DeleteAsync(account);
+                if (!deleted)
+                {
+                    return ApiResponse<string>.Error(500, "Failed to delete user");
+                }
+
+                return ApiResponse<string>.Success(null, "User deleted successfully");
+            }
+            catch (Exception ex)
+            {
+                return ApiResponse<string>.Error(500, $"An error occurred: {ex.Message}");
+            }
+
+        }
+
+        public async Task<ApiResponse<Account?>> View(string id)
+        {
+            try
+            {
+                var account = await _loginRepository.ViewAsync(id);
+                if (account == null)
+                {
+                    return ApiResponse<Account?>.Error(404, "User not found");
+                }
+                return ApiResponse<Account?>.Success(account);
+            }
+            catch (Exception ex) {
+                return ApiResponse<Account?>.Error(500, $"An error occurred: {ex.Message}");
+            }
+            
+        }
+
+        public async Task<ApiResponse<string>> Update(string id, UpdateUserRequest request)
+        {
+            try
+            {
+                if (id != request.Id)
+                    return ApiResponse<string>.Error(Exceptions.ErrorCode.CANNOT_UPDATE_ACCOUNT);
+
+                var account = await _loginRepository.FindByIdAsync(id);
+                if (account == null)
+                {
+                    return ApiResponse<string>.Error(404, "User not found");
+                }
+                UserMapper.MapUpdateRequestToEntity(request, account);
+
+                var updated = await _loginRepository.UpdateAsync(account);
+                if (!updated)
+                {
+                    return ApiResponse<string>.Error(500, "Failed to update user");
+                }
+                return ApiResponse<string>.Success(null, "User updated successfully");
+            }
+            catch (Exception ex)
+            {
+                return ApiResponse<string>.Error(500, $"An error occurred: {ex.Message}");
+            }
+        }
+
     }
 }

@@ -30,7 +30,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Dto\Mapper\" />
     <Folder Include="Utils\" />
   </ItemGroup>
 

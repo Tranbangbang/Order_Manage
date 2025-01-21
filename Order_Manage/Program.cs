@@ -44,29 +44,31 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<DapperContext>();
 
 #region.Service
-builder.Services.AddScoped<ILoginService, LoginService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IAccountService, AccountService>();
+builder.Services.AddScoped<IOrderService, OrderServiceImpl>();
 #endregion
-
 #region.Repository
-builder.Services.AddScoped<ILoginRepository, LoginRepositoryImpl>();
+builder.Services.AddScoped<IAuthRepository, AuthRepositoryImpl>();
 builder.Services.AddScoped<IAccountRepository, AccountRepositoryImpl>();
+builder.Services.AddScoped<IOrderRepository, OrderRepositoryImpl>();
 #endregion
+#region.cookie
 builder.Services.Configure<CookiePolicyOptions>(options =>
 {
     options.CheckConsentNeeded = context => true;
-    options.MinimumSameSitePolicy = SameSiteMode.Lax; // Lax ?? tránh l?i cookie trong OAuth
+    options.MinimumSameSitePolicy = SameSiteMode.Lax;
 });
-
-// C?u hình Session
-builder.Services.AddDistributedMemoryCache(); // Dùng b? nh? trong cho Session
+#endregion
+#region.Session
+builder.Services.AddDistributedMemoryCache(); 
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromMinutes(30);
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
-
+#endregion
 #region.Google
 builder.Services.AddAuthentication(options =>
 {

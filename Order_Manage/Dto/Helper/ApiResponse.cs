@@ -1,4 +1,6 @@
-﻿namespace Order_Manage.Dto.Helper
+﻿using Order_Manage.Exceptions;
+
+namespace Order_Manage.Dto.Helper
 {
     public class ApiResponse<T>
     {
@@ -20,7 +22,6 @@
             Code = code;
             Message = message;
         }
-
         private ApiResponse(int code, string message, T data)
         {
             Code = code;
@@ -34,6 +35,11 @@
         public static ApiResponse<T> Error(int code, string message)
         {
             return new ApiResponse<T>(code, message);
+        }
+
+        public static ApiResponse<T> Error(ErrorCode errorCode)
+        {
+            return new ApiResponse<T>((int)errorCode, errorCode.GetMessage());
         }
     }
 }

@@ -16,14 +16,14 @@ using Order_Manage.Models;
 
 [ApiController]
 [Route("api/[controller]")]
-public class LoginController : ControllerBase
+public class AuthController : ControllerBase
 {
-    private readonly ILoginService _accountService;
+    private readonly IAuthService _accountService;
     private readonly UserManager<Account> _userManager;
     private readonly SignInManager<Account> _signInManager;
     private readonly IConfiguration _configuration;
 
-    public LoginController(ILoginService accountService,UserManager<Account> userManager, SignInManager<Account> signInManager, IConfiguration configuration)
+    public AuthController(IAuthService accountService,UserManager<Account> userManager, SignInManager<Account> signInManager, IConfiguration configuration)
     {
         _accountService = accountService;
         _userManager = userManager;
@@ -54,6 +54,31 @@ public class LoginController : ControllerBase
         return StatusCode(response.Code, response);
     }
 
+    [HttpGet("{id}")]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = $"{UserRoles.Admin}")]
+    public async Task<IActionResult> View(string id)
+    {
+        var response = await _accountService.View(id);
+        return StatusCode(response.Code, response);
+    }
+
+
+    [HttpDelete("{id}")]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = $"{UserRoles.Admin}")]
+    public async Task<IActionResult> Delete(string id)
+    {
+        var response = await _accountService.Delete(id);
+        return StatusCode(response.Code, response);
+    }
+    
+    [HttpPut("{id}")]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = $"{UserRoles.Admin}")]
+    public async Task<IActionResult> Update(string id, [FromBody] UpdateUserRequest request)
+    {
+        var response = await _accountService.Update(id, request);
+        return StatusCode(response.Code, response);
+    }
+
 
     [HttpGet("login-google")]
     public IActionResult LoginWithGoogle()
@@ -62,7 +87,4 @@ public class LoginController : ControllerBase
         var properties = _signInManager.ConfigureExternalAuthenticationProperties(GoogleDefaults.AuthenticationScheme, redirectUrl);
         return Challenge(properties, GoogleDefaults.AuthenticationScheme);
     }
-
-
-   
 }

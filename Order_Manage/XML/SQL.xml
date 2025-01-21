@@ -6,6 +6,17 @@
 			INSERT INTO ViaCode (viaCode, email, createAt)
 			VALUES (@ViaCode, @Email, @CreateAt)
 		</insert-via-code>
+
+		<insert-order>
+			INSERT INTO Orders (OrderDate, AccountId)
+			VALUES (@OrderDate, @AccountId);
+			SELECT LAST_INSERT_ID();
+		</insert-order>
+
+		<insert-order-detail>
+			INSERT INTO OrderDetails (OrderId, ProductId, Quantity)
+			VALUES (@OrderId, @ProductId, @Quantity);
+		</insert-order-detail>
 	</insert>
 
 	<select>
@@ -20,6 +31,17 @@
 			FROM ViaCode
 			WHERE Email = @Email
 		</get-viaCode-by-Email>
+
+		<get-user-orders>
+			SELECT o.OrderId, o.OrderDate, od.OrderDetailId, od.ProductId, od.Quantity,
+			p.ProductName, p.Price
+			FROM Orders o
+			INNER JOIN OrderDetails od ON o.OrderId = od.OrderId
+			INNER JOIN Products p ON od.ProductId = p.ProductId
+			WHERE o.AccountId = @AccountId
+			ORDER BY o.OrderDate DESC;
+		</get-user-orders>
+		
 	</select>
 
 	<update>

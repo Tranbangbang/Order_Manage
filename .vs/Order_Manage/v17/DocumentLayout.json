@@ -1,0 +1,866 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\CY_VietNam\\C#\\Order_Manage\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\dto\\helper\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\dto\\helper\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\repository\\impl\\orderrepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\repository\\impl\\orderrepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\xml\\sql.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\xml\\sql.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\dto\\response\\productresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\dto\\response\\productresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\dto\\response\\orderdetailresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\dto\\response\\orderdetailresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\dto\\response\\orderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\dto\\response\\orderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\service\\impl\\orderserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\service\\impl\\orderserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\exceptions\\errorcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\exceptions\\errorcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\service\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\service\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\repository\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\repository\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\dto\\mapper\\ordermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\dto\\mapper\\ordermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\service\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\service\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\service\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\service\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\dto\\request\\orderdetailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\dto\\request\\orderdetailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\dto\\request\\orderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\dto\\request\\orderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\service\\impl\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\service\\impl\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\repository\\impl\\accountrepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\repository\\impl\\accountrepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\xml\\queryloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\xml\\queryloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\service\\impl\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\service\\impl\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\dto\\request\\updateuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\dto\\request\\updateuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\dto\\mapper\\usermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\dto\\mapper\\usermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\repository\\impl\\authrepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\repository\\impl\\authrepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\repository\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\repository\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\dto\\request\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\dto\\request\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\dto\\helper\\dappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\dto\\helper\\dappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\order_manage.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\order_manage.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\dto\\request\\emailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\dto\\request\\emailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\dto\\helper\\swagger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\dto\\helper\\swagger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\dto\\helper\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\dto\\helper\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\dto\\helper\\userroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\dto\\helper\\userroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\dto\\enum\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\dto\\enum\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\repository\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\repository\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\dto\\request\\signuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\dto\\request\\signuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\dto\\response\\accountresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\dto\\response\\accountresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\dto\\response\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\dto\\response\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\dto\\request\\viacoderequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\dto\\request\\viacoderequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\models\\viacode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\models\\viacode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|c:\\cy_vietnam\\c#\\order_manage\\order_manage\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CADDD31-7FAD-42EF-95A1-B1898D74B853}|Order_Manage\\Order_Manage.csproj|solutionrelative:order_manage\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductResponse.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Response\\ProductResponse.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Dto\\Response\\ProductResponse.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Response\\ProductResponse.cs",
+              "RelativeToolTip": "Order_Manage\\Dto\\Response\\ProductResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:08:42.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderResponse.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Response\\OrderResponse.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Dto\\Response\\OrderResponse.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Response\\OrderResponse.cs",
+              "RelativeToolTip": "Order_Manage\\Dto\\Response\\OrderResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:06:07.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderDetailResponse.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Response\\OrderDetailResponse.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Dto\\Response\\OrderDetailResponse.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Response\\OrderDetailResponse.cs",
+              "RelativeToolTip": "Order_Manage\\Dto\\Response\\OrderDetailResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:07:11.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Models\\Account.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Models\\Account.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Models\\Account.cs",
+              "RelativeToolTip": "Order_Manage\\Models\\Account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:05:50.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Models\\OrderDetail.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Models\\OrderDetail.cs",
+              "RelativeToolTip": "Order_Manage\\Models\\OrderDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:37:41.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\appsettings.json",
+              "RelativeDocumentMoniker": "Order_Manage\\appsettings.json",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\appsettings.json",
+              "RelativeToolTip": "Order_Manage\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-17T04:15:43.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SQL.xml",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\XML\\SQL.xml",
+              "RelativeDocumentMoniker": "Order_Manage\\XML\\SQL.xml",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\XML\\SQL.xml",
+              "RelativeToolTip": "Order_Manage\\XML\\SQL.xml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-01-20T00:54:21.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderRepositoryImpl.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Repository\\Impl\\OrderRepositoryImpl.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Repository\\Impl\\OrderRepositoryImpl.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Repository\\Impl\\OrderRepositoryImpl.cs",
+              "RelativeToolTip": "Order_Manage\\Repository\\Impl\\OrderRepositoryImpl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:07:49.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Helper\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Dto\\Helper\\ApiResponse.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Helper\\ApiResponse.cs",
+              "RelativeToolTip": "Order_Manage\\Dto\\Helper\\ApiResponse.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA9wA4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T00:58:12.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrderServiceImpl.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Service\\Impl\\OrderServiceImpl.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Service\\Impl\\OrderServiceImpl.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Service\\Impl\\OrderServiceImpl.cs",
+              "RelativeToolTip": "Order_Manage\\Service\\Impl\\OrderServiceImpl.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwDAAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:18:40.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ErrorCode.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Exceptions\\ErrorCode.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Exceptions\\ErrorCode.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Exceptions\\ErrorCode.cs",
+              "RelativeToolTip": "Order_Manage\\Exceptions\\ErrorCode.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:12:15.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Service\\IOrderService.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Service\\IOrderService.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Service\\IOrderService.cs",
+              "RelativeToolTip": "Order_Manage\\Service\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:14:52.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Order_Manage\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:22:21.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IOrderRepository.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Repository\\IOrderRepository.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Repository\\IOrderRepository.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Repository\\IOrderRepository.cs",
+              "RelativeToolTip": "Order_Manage\\Repository\\IOrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:07:12.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Models\\Product.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Models\\Product.cs",
+              "RelativeToolTip": "Order_Manage\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:36:42.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Order_Manage\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAiwCIAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:09:45.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OrderMapper.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Mapper\\OrderMapper.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Dto\\Mapper\\OrderMapper.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Mapper\\OrderMapper.cs",
+              "RelativeToolTip": "Order_Manage\\Dto\\Mapper\\OrderMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:54:05.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Program.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Program.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Program.cs",
+              "RelativeToolTip": "Order_Manage\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAIIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T04:52:37.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Order_Manage\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T04:02:49.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Service\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Service\\IAuthService.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Service\\IAuthService.cs",
+              "RelativeToolTip": "Order_Manage\\Service\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:06:39.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IAccountService.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Service\\IAccountService.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Service\\IAccountService.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Service\\IAccountService.cs",
+              "RelativeToolTip": "Order_Manage\\Service\\IAccountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T03:34:38.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "OrderDetailRequest.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Request\\OrderDetailRequest.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Dto\\Request\\OrderDetailRequest.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Request\\OrderDetailRequest.cs",
+              "RelativeToolTip": "Order_Manage\\Dto\\Request\\OrderDetailRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:17:41.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "OrderRequest.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Request\\OrderRequest.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Dto\\Request\\OrderRequest.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Request\\OrderRequest.cs",
+              "RelativeToolTip": "Order_Manage\\Dto\\Request\\OrderRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:15:14.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Service\\Impl\\AccountService.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Service\\Impl\\AccountService.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Service\\Impl\\AccountService.cs",
+              "RelativeToolTip": "Order_Manage\\Service\\Impl\\AccountService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCcAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T03:34:54.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "QueryLoader.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\XML\\QueryLoader.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\XML\\QueryLoader.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\XML\\QueryLoader.cs",
+              "RelativeToolTip": "Order_Manage\\XML\\QueryLoader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T00:55:20.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Models\\Order.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Models\\Order.cs",
+              "RelativeToolTip": "Order_Manage\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:37:09.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Service\\Impl\\AuthService.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Service\\Impl\\AuthService.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Service\\Impl\\AuthService.cs",
+              "RelativeToolTip": "Order_Manage\\Service\\Impl\\AuthService.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAAAMAAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:07:31.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AccountRepositoryImpl.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Repository\\Impl\\AccountRepositoryImpl.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Repository\\Impl\\AccountRepositoryImpl.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Repository\\Impl\\AccountRepositoryImpl.cs",
+              "RelativeToolTip": "Order_Manage\\Repository\\Impl\\AccountRepositoryImpl.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAIwFIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T02:59:30.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Order_Manage\\Models\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T04:38:23.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UpdateUserRequest.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Request\\UpdateUserRequest.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Dto\\Request\\UpdateUserRequest.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Request\\UpdateUserRequest.cs",
+              "RelativeToolTip": "Order_Manage\\Dto\\Request\\UpdateUserRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:32:19.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UserMapper.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Mapper\\UserMapper.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Dto\\Mapper\\UserMapper.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Mapper\\UserMapper.cs",
+              "RelativeToolTip": "Order_Manage\\Dto\\Mapper\\UserMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:56:05.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AuthRepositoryImpl.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Repository\\Impl\\AuthRepositoryImpl.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Repository\\Impl\\AuthRepositoryImpl.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Repository\\Impl\\AuthRepositoryImpl.cs",
+              "RelativeToolTip": "Order_Manage\\Repository\\Impl\\AuthRepositoryImpl.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAIwEoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:03:58.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IAuthRepository.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Repository\\IAuthRepository.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Repository\\IAuthRepository.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Repository\\IAuthRepository.cs",
+              "RelativeToolTip": "Order_Manage\\Repository\\IAuthRepository.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwBIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T00:56:54.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Request\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Dto\\Request\\LoginRequest.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Request\\LoginRequest.cs",
+              "RelativeToolTip": "Order_Manage\\Dto\\Request\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T00:48:37.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "DapperContext.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Helper\\DapperContext.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Dto\\Helper\\DapperContext.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Helper\\DapperContext.cs",
+              "RelativeToolTip": "Order_Manage\\Dto\\Helper\\DapperContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T03:20:17.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Order_Manage\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Order_Manage\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-20T09:37:35.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "EmailRequest.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Request\\EmailRequest.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Dto\\Request\\EmailRequest.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Request\\EmailRequest.cs",
+              "RelativeToolTip": "Order_Manage\\Dto\\Request\\EmailRequest.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T03:54:22.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Order_Manage.csproj",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Order_Manage.csproj",
+              "RelativeDocumentMoniker": "Order_Manage\\Order_Manage.csproj",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Order_Manage.csproj",
+              "RelativeToolTip": "Order_Manage\\Order_Manage.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-17T04:39:31.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "IAccountRepository.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Repository\\IAccountRepository.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Repository\\IAccountRepository.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Repository\\IAccountRepository.cs",
+              "RelativeToolTip": "Order_Manage\\Repository\\IAccountRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T02:57:16.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Roles.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Enum\\Roles.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Dto\\Enum\\Roles.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Enum\\Roles.cs",
+              "RelativeToolTip": "Order_Manage\\Dto\\Enum\\Roles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T06:20:57.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "UserRoles.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Helper\\UserRoles.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Dto\\Helper\\UserRoles.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Helper\\UserRoles.cs",
+              "RelativeToolTip": "Order_Manage\\Dto\\Helper\\UserRoles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T06:25:15.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Swagger.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Helper\\Swagger.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Dto\\Helper\\Swagger.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Helper\\Swagger.cs",
+              "RelativeToolTip": "Order_Manage\\Dto\\Helper\\Swagger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T06:37:25.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Helper\\SeedData.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Dto\\Helper\\SeedData.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Helper\\SeedData.cs",
+              "RelativeToolTip": "Order_Manage\\Dto\\Helper\\SeedData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:16:29.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "SignupRequest.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Request\\SignupRequest.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Dto\\Request\\SignupRequest.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Request\\SignupRequest.cs",
+              "RelativeToolTip": "Order_Manage\\Dto\\Request\\SignupRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T04:23:55.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "AccountResponse.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Response\\AccountResponse.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Dto\\Response\\AccountResponse.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Response\\AccountResponse.cs",
+              "RelativeToolTip": "Order_Manage\\Dto\\Response\\AccountResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T04:14:05.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Response\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Dto\\Response\\LoginResponse.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Response\\LoginResponse.cs",
+              "RelativeToolTip": "Order_Manage\\Dto\\Response\\LoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T00:49:05.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ViaCodeRequest.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Request\\ViaCodeRequest.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Dto\\Request\\ViaCodeRequest.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Dto\\Request\\ViaCodeRequest.cs",
+              "RelativeToolTip": "Order_Manage\\Dto\\Request\\ViaCodeRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T03:38:54.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ViaCode.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Models\\ViaCode.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Models\\ViaCode.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Models\\ViaCode.cs",
+              "RelativeToolTip": "Order_Manage\\Models\\ViaCode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T02:46:23.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Order_Manage\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T03:02:54.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Order_Manage\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\CY_VietNam\\C#\\Order_Manage\\Order_Manage\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Order_Manage\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:09:48.814Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -3,13 +3,13 @@ using Order_Manage.Models;
 
 namespace Order_Manage.Repository.Impl
 {
-    public class LoginRepositoryImpl : ILoginRepository
+    public class AuthRepositoryImpl : IAuthRepository
     {
 
         private readonly UserManager<Account> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
 
-        public LoginRepositoryImpl(UserManager<Account> userManager, RoleManager<IdentityRole> roleManager)
+        public AuthRepositoryImpl(UserManager<Account> userManager, RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _roleManager = roleManager;
@@ -55,6 +55,23 @@ namespace Order_Manage.Repository.Impl
         public Task<bool> RegisterAsync(Account account, string password)
         {
             throw new NotImplementedException();
+        }
+
+
+        public async Task<Account?> FindByIdAsync(string id)
+        {
+            return await _userManager.FindByIdAsync(id);
+        }
+
+        public async Task<bool> UpdateAsync(Account account)
+        {
+            var result = await _userManager.UpdateAsync(account);
+            return result.Succeeded;
+        }
+
+        public async Task<Account?> ViewAsync(string id)
+        {
+            return await FindByIdAsync(id);
         }
     }
 }
