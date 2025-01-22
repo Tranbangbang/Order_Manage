@@ -17,6 +17,19 @@
 			INSERT INTO OrderDetails (OrderId, ProductId, Quantity)
 			VALUES (@OrderId, @ProductId, @Quantity);
 		</insert-order-detail>
+
+		<insert-notification>
+			INSERT INTO Notification (UserId, NotificationType, NotificationMessage, ReadFlg, RedirectUrl, UrlBody, CreatedAt, CreatedBy)
+			VALUES (@UserId, @NotificationType, @NotificationMessage, @ReadFlg, @RedirectUrl, @UrlBody, @CreatedAt, @CreatedBy);
+			SELECT LAST_INSERT_ID();
+		</insert-notification>
+
+
+		<insert-message>
+			INSERT INTO Message (SenderId, ReceiverId, Content)
+			VALUES (@SenderId, @ReceiverId, @Content);
+		</insert-message>
+		
 	</insert>
 
 	<select>
@@ -27,7 +40,7 @@
 		</get-acc-by-Email>
 
 		<get-viaCode-by-Email>
-			SELECT viaCode
+			SELECT *
 			FROM ViaCode
 			WHERE Email = @Email
 		</get-viaCode-by-Email>
@@ -41,11 +54,32 @@
 			WHERE o.AccountId = @AccountId
 			ORDER BY o.OrderDate DESC;
 		</get-user-orders>
+
+
+		<get-user-notifications>
+			SELECT NotificationId, UserId, NotificationType, NotificationMessage, ReadFlg, RedirectUrl, UrlBody, CreatedAt, CreatedBy
+			FROM Notification
+			WHERE UserId = @UserId
+			ORDER BY CreatedAt DESC;
+		</get-user-notifications>
+
+
+		<get-chat-history>
+			SELECT SenderId, ReceiverId, Content
+			FROM Message
+			WHERE (SenderId = @SenderId AND ReceiverId = @ReceiverId)
+			OR (SenderId = @ReceiverId AND ReceiverId = @SenderId);
+			
+		</get-chat-history>
 		
 	</select>
 
 	<update>
-		
+		<mark-notification-read>
+			UPDATE Notification
+			SET ReadFlg = 1
+			WHERE NotificationId = @NotificationId;
+		</mark-notification-read>
 	</update>
 	
 	<delete>

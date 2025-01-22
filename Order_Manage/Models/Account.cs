@@ -10,5 +10,6 @@ namespace Order_Manage.Models
         public DateTime? DateOfBirth { get; set; }
         public DateTime createAt { get; set; }
         public ICollection<Order>? Orders { get; set; }
+        public ICollection<Notification>? Notifications { get; set; }
     }
 }

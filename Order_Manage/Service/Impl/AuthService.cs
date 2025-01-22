@@ -6,9 +6,9 @@ using Order_Manage.Dto.Request;
 using Order_Manage.Dto.Response;
 using Order_Manage.Models;
 using Order_Manage.Repository;
-using Order_Manage.Dto.Helper;
 using Order_Manage.Dto.Mapper;
 using Microsoft.AspNetCore.Http.HttpResults;
+using Order_Manage.Common.Constants.Helper;
 
 namespace Order_Manage.Service.Impl
 {
@@ -127,11 +127,24 @@ namespace Order_Manage.Service.Impl
                 {
                     return ApiResponse<string?>.Error(400, "User already exists");
                 }
-                int viaCode = _accountRepository.GetViaCodeByEmail(request.Email);
-                if (request.Code!=viaCode)
+                var viaCode = _accountRepository.GetViaCodeByEmail(request.Email);
+
+                if (viaCode == null)
+                {
+                    return ApiResponse<string?>.Error(400, "Verification code not found");
+                }
+                Console.WriteLine(viaCode.viaCode);
+                if (request.Code != viaCode.viaCode)
                 {
                     return ApiResponse<string?>.Error(400, "Invalid or expired verification code");
                 }
+
+                /*
+                if (viaCode.createAt.AddMinutes(10) < DateTime.Now)
+                {
+                    return ApiResponse<string?>.Error(400, "Verification code has expired");
+                }
+                */
                 var account = new Account
                 {
                     UserName = request.Email,
@@ -183,7 +196,6 @@ namespace Order_Manage.Service.Impl
             {
                 return ApiResponse<string>.Error(500, $"An error occurred: {ex.Message}");
             }
-
         }
 
         public async Task<ApiResponse<Account?>> View(string id)
@@ -209,14 +221,12 @@ namespace Order_Manage.Service.Impl
             {
                 if (id != request.Id)
                     return ApiResponse<string>.Error(Exceptions.ErrorCode.CANNOT_UPDATE_ACCOUNT);
-
                 var account = await _loginRepository.FindByIdAsync(id);
                 if (account == null)
                 {
                     return ApiResponse<string>.Error(404, "User not found");
                 }
                 UserMapper.MapUpdateRequestToEntity(request, account);
-
                 var updated = await _loginRepository.UpdateAsync(account);
                 if (!updated)
                 {
@@ -229,6 +239,5 @@ namespace Order_Manage.Service.Impl
                 return ApiResponse<string>.Error(500, $"An error occurred: {ex.Message}");
             }
         }
-
     }
 }

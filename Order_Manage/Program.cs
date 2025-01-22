@@ -9,9 +9,12 @@ using Order_Manage.Repository;
 using Order_Manage.Repository.Impl;
 using Order_Manage.Service;
 using Order_Manage.Service.Impl;
-using Order_Manage.Dto.Helper;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
+using Order_Manage.Common.Constants.Helper;
+using Order_Manage.Common.Hubs;
+using Fleck;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,16 +45,23 @@ builder.Services.AddCustomizeSwagger();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<DapperContext>();
+//builder.Services.AddSingleton<WebSocketHandler>();
+
 
 #region.Service
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<IOrderService, OrderServiceImpl>();
+builder.Services.AddScoped<INotificationService, NotificationServiceImpl>();
 #endregion
 #region.Repository
 builder.Services.AddScoped<IAuthRepository, AuthRepositoryImpl>();
 builder.Services.AddScoped<IAccountRepository, AccountRepositoryImpl>();
 builder.Services.AddScoped<IOrderRepository, OrderRepositoryImpl>();
+builder.Services.AddScoped<INotificationRepository, NotificationRepositoryImpl>();
+builder.Services.AddScoped<IMessageRepository, MessageRepositoryImpl>();
+builder.Services.AddScoped<WebSocketHandler>();
+
 #endregion
 #region.cookie
 builder.Services.Configure<CookiePolicyOptions>(options =>
@@ -98,13 +108,14 @@ builder.Services.AddAuthentication(options =>
 
 #endregion
 
-
+builder.Services.AddSignalR();
 
 string filePath = Path.Combine("XML", "SQL.xml");
 builder.Services.AddSingleton<QueryLoader>(_ => new QueryLoader(filePath));
 
 
 var app = builder.Build();
+app.UseWebSockets();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -125,9 +136,37 @@ using (var scope = app.Services.CreateScope())
     var configuration = services.GetRequiredService<IConfiguration>();
     await SeedData.InitializeAdminAccount(services, configuration);
 }
+app.MapHub<NotificationHub>("/notificationHub");
+app.Use(async (context, next) =>
+{
+    if (context.Request.Path == "/ws")
+    {
+        if (context.WebSockets.IsWebSocketRequest)
+        {
+            var userIdString = context.Request.Query["userId"];
+            if (string.IsNullOrEmpty(userIdString) || !Guid.TryParse(userIdString, out var userId))
+            {
+                context.Response.StatusCode = 400; // Bad Request
+                await context.Response.WriteAsync("Invalid or missing userId");
+                return;
+            }
+
+            var webSocket = await context.WebSockets.AcceptWebSocketAsync();
+            var webSocketHandler = context.RequestServices.GetRequiredService<WebSocketHandler>();
+            await webSocketHandler.Handle(context, webSocket, userId.ToString());
+        }
+        else
+        {
+            context.Response.StatusCode = 400; // Not a WebSocket request
+        }
+    }
+    else
+    {
+        await next();
+    }
+});
 
 app.UseHttpsRedirection();
-
 app.UseCookiePolicy();
 app.UseSession();
 app.UseAuthentication();

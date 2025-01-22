@@ -1,4 +1,4 @@
-﻿namespace Order_Manage.Dto.Helper
+﻿namespace Order_Manage.Common.Constants.Helper
 {
     public static class UserRoles
     {

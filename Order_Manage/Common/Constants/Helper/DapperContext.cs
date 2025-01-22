@@ -1,7 +1,7 @@
 ﻿using MySqlConnector;
 using System.Data;
 
-namespace Order_Manage.Dto.Helper
+namespace Order_Manage.Common.Constants.Helper
 {
     public class DapperContext(IConfiguration configuration)
     {

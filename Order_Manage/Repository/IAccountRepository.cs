@@ -6,7 +6,7 @@ namespace Order_Manage.Repository
     {
         Account FindByEmail(string email);
         int InsertViaCode(ViaCode viaCode);
-        int GetViaCodeByEmail(string email);
+        ViaCode GetViaCodeByEmail(string email);
 
 
     }

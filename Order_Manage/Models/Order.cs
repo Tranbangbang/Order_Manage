@@ -1,8 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Order_Manage.Common.Abstract;
 
 namespace Order_Manage.Models
 {
-    public class Order
+    public class Order : Auditable
     {
         [Key]
         public int OrderId { get; set; }

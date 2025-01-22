@@ -1,5 +1,5 @@
 ﻿using Dapper;
-using Order_Manage.Dto.Helper;
+using Order_Manage.Common.Constants.Helper;
 using Order_Manage.Models;
 using Order_Manage.XML;
 
@@ -41,7 +41,7 @@ namespace Order_Manage.Repository.Impl
             }
         }
 
-        public int GetViaCodeByEmail(string email)
+        public ViaCode? GetViaCodeByEmail(string email)
         {
             var sql = _queryLoader.Read_Xml();
             if (!sql.TryGetValue("get-viaCode-by-Email", out var query))
@@ -57,7 +57,7 @@ namespace Order_Manage.Repository.Impl
                     transaction: transaction
                 );
                 transaction.Commit();
-                return 1;
+                return result;
             }
             catch
             {

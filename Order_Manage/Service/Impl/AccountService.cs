@@ -1,11 +1,11 @@
 ﻿using Microsoft.Extensions.Configuration;
 using MimeKit;
 using MailKit.Net.Smtp;
-using Order_Manage.Dto.Helper;
 using Order_Manage.Dto.Request;
 using Order_Manage.Models;
 using Order_Manage.Repository;
 using Microsoft.AspNetCore.Identity;
+using Order_Manage.Common.Constants.Helper;
 
 namespace Order_Manage.Service.Impl
 {

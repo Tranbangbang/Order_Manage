@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.OpenApi.Models;
 
-namespace Order_Manage.Dto.Helper
+namespace Order_Manage.Common.Constants.Helper
 {
     public static class Swagger
     {
@@ -10,14 +10,14 @@ namespace Order_Manage.Dto.Helper
             services.AddSwaggerGen(c =>
             {
                 c.EnableAnnotations();
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Order_Manager"});
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Order_Manager" });
                 var securityScheme = new OpenApiSecurityScheme
                 {
                     Name = "ORDER",
                     Description = "Enter JWT Bearer token **_only_**",
                     In = ParameterLocation.Header,
                     Type = SecuritySchemeType.Http,
-                    Scheme = "bearer", // Must be lower case
+                    Scheme = "bearer",
                     BearerFormat = "JWT",
                     Reference = new OpenApiReference
                     {

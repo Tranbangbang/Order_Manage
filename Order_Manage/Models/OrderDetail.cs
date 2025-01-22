@@ -2,7 +2,7 @@
 
 namespace Order_Manage.Models
 {
-    public class OrderDetail
+    public class OrderDetail 
     {
         [Key]
         public int OrderDetailId { get; set; }

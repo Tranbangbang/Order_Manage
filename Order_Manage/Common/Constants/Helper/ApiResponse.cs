@@ -1,6 +1,6 @@
 ﻿using Order_Manage.Exceptions;
 
-namespace Order_Manage.Dto.Helper
+namespace Order_Manage.Common.Constants.Helper
 {
     public class ApiResponse<T>
     {

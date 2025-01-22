@@ -233,6 +233,73 @@ namespace Order_Manage.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("Order_Manage.Models.Message", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Content")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("ReceiverId")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("SenderId")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Message");
+                });
+
+            modelBuilder.Entity("Order_Manage.Models.Notification", b =>
+                {
+                    b.Property<int>("NotificationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("NotificationId"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("CreatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<string>("NotificationMessage")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("NotificationType")
+                        .HasColumnType("longtext");
+
+                    b.Property<bool>("ReadFlg")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("RedirectUrl")
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("UpdatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UrlBody")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("varchar(255)");
+
+                    b.HasKey("NotificationId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Notification");
+                });
+
             modelBuilder.Entity("Order_Manage.Models.Order", b =>
                 {
                     b.Property<int>("OrderId")
@@ -244,8 +311,20 @@ namespace Order_Manage.Migrations
                     b.Property<string>("AccountId")
                         .HasColumnType("varchar(255)");
 
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("CreatedBy")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime(6)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("UpdatedBy")
+                        .HasColumnType("int");
 
                     b.HasKey("OrderId");
 
@@ -288,11 +367,23 @@ namespace Order_Manage.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("ProductId"));
 
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("CreatedBy")
+                        .HasColumnType("int");
+
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(65,30)");
 
                     b.Property<string>("ProductName")
                         .HasColumnType("longtext");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("UpdatedBy")
+                        .HasColumnType("int");
 
                     b.HasKey("ProductId");
 
@@ -372,6 +463,15 @@ namespace Order_Manage.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Order_Manage.Models.Notification", b =>
+                {
+                    b.HasOne("Order_Manage.Models.Account", "Account")
+                        .WithMany("Notifications")
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("Account");
+                });
+
             modelBuilder.Entity("Order_Manage.Models.Order", b =>
                 {
                     b.HasOne("Order_Manage.Models.Account", "Account")
@@ -402,6 +502,8 @@ namespace Order_Manage.Migrations
 
             modelBuilder.Entity("Order_Manage.Models.Account", b =>
                 {
+                    b.Navigation("Notifications");
+
                     b.Navigation("Orders");
                 });
 

@@ -12,6 +12,8 @@ namespace Order_Manage.Models
 
         public DbSet<ViaCode>? ViaCode {get; set; }
 
+        public DbSet<Notification>? Notification { get; set; }
+        public DbSet<Message>? Message { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
@@ -36,6 +38,11 @@ namespace Order_Manage.Models
                 .HasOne(od => od.Product)
                 .WithMany(p => p.OrderDetails)
                 .HasForeignKey(od => od.ProductId);
+
+            builder.Entity<Notification>()
+               .HasOne(o => o.Account)
+               .WithMany(a => a.Notifications)
+               .HasForeignKey(o => o.UserId);
         }
     }
 }

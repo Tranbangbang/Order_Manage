@@ -1,5 +1,5 @@
 ﻿using System.Security.Claims;
-using Order_Manage.Dto.Helper;
+using Order_Manage.Common.Constants.Helper;
 using Order_Manage.Dto.Mapper;
 using Order_Manage.Dto.Request;
 using Order_Manage.Dto.Response;
@@ -12,11 +12,12 @@ namespace Order_Manage.Service.Impl
     {
         public readonly IOrderRepository _orderRepository;
         public readonly ILogger _logger;
-
-        public OrderServiceImpl(IOrderRepository orderRepository, ILogger<IOrderRepository> logger)
+        public readonly INotificationService _notificationService;
+        public OrderServiceImpl(IOrderRepository orderRepository, ILogger<IOrderRepository> logger, INotificationService notificationService)
         {
             _orderRepository = orderRepository;
             _logger = logger;
+            _notificationService = notificationService;
         }
         public ApiResponse<int> CreateOrder(OrderRequest orderRequest, ClaimsPrincipal user)
         {
@@ -26,7 +27,6 @@ namespace Order_Manage.Service.Impl
                 {
                     return ApiResponse<int>.Error((int)ErrorCode.ORDER_DETAILS_MISSING, ErrorCode.ORDER_DETAILS_MISSING.GetMessage());
                 }
-
                 var accountId = user.FindFirst(ClaimTypes.NameIdentifier)?.Value;
                 if (string.IsNullOrEmpty(accountId))
                 {
@@ -34,8 +34,21 @@ namespace Order_Manage.Service.Impl
                 }
                 var order = OrderMapper.ToEntity(orderRequest);
                 order.AccountId = accountId;
-
                 var orderId = _orderRepository.CreateOrder(order);
+                var notificationRequest = new NotificationRequest
+                {
+                    UserId = accountId,
+                    NotificationType = "Order",
+                    NotificationMessage = $"Your order #{orderId} has been created successfully!",
+                    RedirectUrl = $"/orders/{orderId}",
+                    ReadFlg = false
+                };
+                var notificationResponse = _notificationService.CreateNotification(notificationRequest);
+
+                if (notificationResponse == null)
+                {
+                    _logger.LogWarning("Notification not sent successfully for order #{OrderId}", orderId);
+                }
                 return ApiResponse<int>.Success(orderId, "Order created successfully");
             }
             catch (Exception ex)
@@ -44,6 +57,7 @@ namespace Order_Manage.Service.Impl
                 return ApiResponse<int>.Error((int)ErrorCode.ORDER_CREATION_FAILED, ErrorCode.ORDER_CREATION_FAILED.GetMessage());
             }
         }
+
 
 
         public ApiResponse<List<OrderResponse>> GetUserOrders(ClaimsPrincipal user)

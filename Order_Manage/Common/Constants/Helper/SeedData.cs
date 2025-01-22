@@ -1,14 +1,14 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Order_Manage.Models;
 
-namespace Order_Manage.Dto.Helper
+namespace Order_Manage.Common.Constants.Helper
 {
     public static class SeedData
     {
         public static async Task InitializeRoles(IServiceProvider serviceProvider)
         {
             var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-            var roles = new[] { UserRoles.Admin,UserRoles.User};
+            var roles = new[] { UserRoles.Admin, UserRoles.User };
             foreach (var role in roles)
             {
                 if (!await roleManager.RoleExistsAsync(role))
