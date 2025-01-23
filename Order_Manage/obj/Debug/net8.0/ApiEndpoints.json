@@ -222,6 +222,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Order_Manage.Controllers.QrCodeController",
+    "Method": "GenerateQrCode",
+    "RelativePath": "api/QrCode/generate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "content",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Order_Manage.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

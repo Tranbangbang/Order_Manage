@@ -136,3 +136,14 @@ C:\CY_VietNam\C#\Order_Manage\Order_Manage\obj\Debug\net8.0\Order_Manage.genrunt
 C:\CY_VietNam\C#\Order_Manage\Order_Manage\obj\Debug\net8.0\ref\Order_Manage.dll
 C:\CY_VietNam\C#\Order_Manage\Order_Manage\bin\Debug\net8.0\Fleck.dll
 C:\CY_VietNam\C#\Order_Manage\Order_Manage\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\CY_VietNam\C#\Order_Manage\Order_Manage\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\CY_VietNam\C#\Order_Manage\Order_Manage\bin\Debug\net8.0\QRCoder.dll
+C:\CY_VietNam\C#\Order_Manage\Order_Manage\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\CY_VietNam\C#\Order_Manage\Order_Manage\bin\Debug\net8.0\zxing.dll
+C:\CY_VietNam\C#\Order_Manage\Order_Manage\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\CY_VietNam\C#\Order_Manage\Order_Manage\bin\Debug\net8.0\SkiaSharp.dll
+C:\CY_VietNam\C#\Order_Manage\Order_Manage\bin\Debug\net8.0\SkiaSharp.QrCode.dll
+C:\CY_VietNam\C#\Order_Manage\Order_Manage\bin\Debug\net8.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\CY_VietNam\C#\Order_Manage\Order_Manage\bin\Debug\net8.0\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\CY_VietNam\C#\Order_Manage\Order_Manage\bin\Debug\net8.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\CY_VietNam\C#\Order_Manage\Order_Manage\bin\Debug\net8.0\runtimes\win-x86\native\libSkiaSharp.dll

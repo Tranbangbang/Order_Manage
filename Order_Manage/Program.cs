@@ -53,6 +53,7 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<IOrderService, OrderServiceImpl>();
 builder.Services.AddScoped<INotificationService, NotificationServiceImpl>();
+builder.Services.AddScoped<IQrCodeService, QrCodeServiceImpl>();
 #endregion
 #region.Repository
 builder.Services.AddScoped<IAuthRepository, AuthRepositoryImpl>();

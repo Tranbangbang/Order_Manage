@@ -371,6 +371,27 @@
         }
       }
     },
+    "/api/QrCode/generate": {
+      "get": {
+        "tags": [
+          "QrCode"
+        ],
+        "parameters": [
+          {
+            "name": "content",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/WeatherForecast": {
       "get": {
         "tags": [
