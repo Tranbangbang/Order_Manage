@@ -1,9 +1,11 @@
 ﻿using System.Security.Claims;
+using Newtonsoft.Json;
 using Order_Manage.Common.Constants.Helper;
 using Order_Manage.Dto.Mapper;
 using Order_Manage.Dto.Request;
 using Order_Manage.Dto.Response;
 using Order_Manage.Exceptions;
+using Order_Manage.Models;
 using Order_Manage.Repository;
 
 namespace Order_Manage.Service.Impl
@@ -58,6 +60,41 @@ namespace Order_Manage.Service.Impl
             }
         }
 
+        public ApiResponse<int> ProcessKafkaOrderz(OrderCreatedEvent orderEvent)
+        {
+            try
+            {
+                if (orderEvent == null || orderEvent.OrderDetails == null || !orderEvent.OrderDetails.Any())
+                {
+                    return ApiResponse<int>.Error((int)ErrorCode.ORDER_DETAILS_MISSING, "Order details are missing");
+                }
+                var order = new Order
+                {
+                    OrderDate = orderEvent.OrderDate,
+                    //TotalAmount = orderEvent.TotalAmount,
+                    AccountId = "KafkaConsumer",
+                    OrderDetails = orderEvent.OrderDetails.Select(d => new OrderDetail
+                    {
+                        ProductId = d.ProductId,
+                        Quantity = d.Quantity
+                    }).ToList() ?? new List<OrderDetail>()
+                };
+
+                var orderId = _orderRepository.CreateOrder(order);
+
+                Console.WriteLine($"Đã lưu Order {orderId} vào DB từ Kafka");
+
+                return ApiResponse<int>.Success(orderId, "Order processed from Kafka");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Lỗi khi xử lý order từ Kafka");
+                return ApiResponse<int>.Error((int)ErrorCode.ORDER_CREATION_FAILED, "Failed to process Kafka order");
+            }
+        }
+
+
+
 
 
         public ApiResponse<List<OrderResponse>> GetUserOrders(ClaimsPrincipal user)
@@ -80,5 +117,36 @@ namespace Order_Manage.Service.Impl
                 return ApiResponse<List<OrderResponse>>.Error((int)ErrorCode.ORDER_HISTORY_FAILED, ErrorCode.ORDER_HISTORY_FAILED.GetMessage());
             }
         }
+
+        public async Task ProcessKafkaOrder(string orderJson)
+        {
+            try
+            {
+                var orderRequest = JsonConvert.DeserializeObject<OrderRequest>(orderJson);
+
+                if (orderRequest == null || orderRequest.OrderDetails == null || !orderRequest.OrderDetails.Any())
+                {
+                    _logger.LogWarning("Order rỗng hoặc không hợp lệ: {OrderJson}", orderJson);
+                    return;
+                }
+                var order = new Order
+                {
+                    OrderDate = orderRequest.OrderDate,
+                    OrderDetails = orderRequest.OrderDetails.Select(d => new OrderDetail
+                    {
+                        ProductId = d.ProductId,
+                        Quantity = d.Quantity
+                    }).ToList()
+                };
+
+                 _orderRepository.CreateOrder(order); 
+                _logger.LogInformation("Đã xử lý và lưu Order: {OrderId}", order.OrderId);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "❌ Lỗi khi xử lý Order từ Kafka");
+            }
+        }
+
     }
 }

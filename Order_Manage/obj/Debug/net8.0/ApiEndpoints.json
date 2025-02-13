@@ -198,7 +198,7 @@
   {
     "ContainingType": "Order_Manage.Controllers.OrderController",
     "Method": "CreateOrder",
-    "RelativePath": "api/Order",
+    "RelativePath": "api/Order/create",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

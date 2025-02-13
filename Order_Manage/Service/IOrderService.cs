@@ -8,6 +8,9 @@ namespace Order_Manage.Service
     public interface IOrderService
     {
         ApiResponse<int> CreateOrder(OrderRequest orderRequest, ClaimsPrincipal user);
+        ApiResponse<int> ProcessKafkaOrderz(OrderCreatedEvent orderEvent);
+
+        Task ProcessKafkaOrder(string orderJson);
         ApiResponse<List<OrderResponse>> GetUserOrders(ClaimsPrincipal user);
     }
 }

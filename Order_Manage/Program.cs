@@ -14,6 +14,9 @@ using Microsoft.AspNetCore.Authentication.Google;
 using Order_Manage.Common.Constants.Helper;
 using Order_Manage.Common.Hubs;
 using Fleck;
+using Order_Manage.Kafka;
+using Order_Manage.Kafka.Dto;
+using Order_Manage.Kafka.Impl;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -46,6 +49,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<DapperContext>();
 //builder.Services.AddSingleton<WebSocketHandler>();
+
+builder.Services.Configure<KafkaConfiguration>(builder.Configuration.GetSection("KafkaConfiguration"));
+builder.Services.AddSingleton<KafkaProducerService>();
+builder.Services.AddHostedService<KafkaConsumerService>();
 
 
 #region.Service

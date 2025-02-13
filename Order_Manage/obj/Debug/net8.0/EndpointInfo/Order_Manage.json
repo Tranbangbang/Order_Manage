@@ -328,7 +328,7 @@
         }
       }
     },
-    "/api/Order": {
+    "/api/Order/create": {
       "post": {
         "tags": [
           "Order"
