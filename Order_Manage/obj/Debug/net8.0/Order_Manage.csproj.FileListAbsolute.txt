@@ -346,3 +346,13 @@ C:\CY_VietNam\CSharp\Order_Manage\Order_Manage\obj\Debug\net8.0\refint\Order_Man
 C:\CY_VietNam\CSharp\Order_Manage\Order_Manage\obj\Debug\net8.0\Order_Manage.pdb
 C:\CY_VietNam\CSharp\Order_Manage\Order_Manage\obj\Debug\net8.0\Order_Manage.genruntimeconfig.cache
 C:\CY_VietNam\CSharp\Order_Manage\Order_Manage\obj\Debug\net8.0\ref\Order_Manage.dll
+C:\CY_VietNam\CSharp\Order_Manage\Order_Manage\bin\Debug\net8.0\Serilog.dll
+C:\CY_VietNam\CSharp\Order_Manage\Order_Manage\bin\Debug\net8.0\Serilog.Sinks.File.dll
+C:\CY_VietNam\CSharp\Order_Manage\Order_Manage\bin\Debug\net8.0\Serilog.Sinks.Http.dll
+C:\CY_VietNam\CSharp\Order_Manage\Order_Manage\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\CY_VietNam\CSharp\Order_Manage\Order_Manage\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\CY_VietNam\CSharp\Order_Manage\Order_Manage\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\CY_VietNam\CSharp\Order_Manage\Order_Manage\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\CY_VietNam\CSharp\Order_Manage\Order_Manage\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\CY_VietNam\CSharp\Order_Manage\Order_Manage\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\CY_VietNam\CSharp\Order_Manage\Order_Manage\bin\Debug\net8.0\Serilog.Sinks.Debug.dll

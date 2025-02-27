@@ -1,0 +1,52 @@
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\appsettings.Development.json
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Logging Service.staticwebassets.endpoints.json
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Logging Service.exe
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\appsettings.json
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Logging Service.deps.json
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Logging Service.runtimeconfig.json
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Logging Service.dll
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Logging Service.pdb
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Elasticsearch.Net.dll
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Nest.dll
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Serilog.dll
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Serilog.Formatting.Elasticsearch.dll
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Serilog.Sinks.Elasticsearch.dll
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Serilog.Sinks.File.dll
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Serilog.Sinks.PeriodicBatching.dll
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\Logging Service.csproj.AssemblyReference.cache
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\Logging Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\Logging Service.AssemblyInfoInputs.cache
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\Logging Service.AssemblyInfo.cs
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\Logging Service.csproj.CoreCompileInputs.cache
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\Logging Service.MvcApplicationPartsAssemblyInfo.cs
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\Logging Service.MvcApplicationPartsAssemblyInfo.cache
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\Logging Service.sourcelink.json
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\scopedcss\bundle\Logging Service.styles.css
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\staticwebassets.build.json
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\staticwebassets.development.json
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\staticwebassets\msbuild.Logging Service.Microsoft.AspNetCore.StaticWebAssets.props
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\staticwebassets\msbuild.Logging Service.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\staticwebassets\msbuild.build.Logging Service.props
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Logging Service.props
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Logging Service.props
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\staticwebassets.pack.json
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\Logging .3554BF28.Up2Date
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\Logging Service.dll
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\refint\Logging Service.dll
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\Logging Service.pdb
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\Logging Service.genruntimeconfig.cache
+C:\CY_VietNam\CSharp\Order_Manage\Logging Service\obj\Debug\net8.0\ref\Logging Service.dll

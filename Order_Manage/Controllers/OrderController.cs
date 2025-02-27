@@ -66,7 +66,7 @@ namespace Order_Manage.Controllers
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            await _kafkaProducer.SendMessageAsync(orderRequest);
+           // await _kafkaProducer.SendMessageAsync(orderRequest);
 
             return Ok(new { message = "Order đã gửi vào Kafka", orderId = orderRequest.OrderDetails});
         }
